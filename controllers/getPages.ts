@@ -10,11 +10,7 @@ import { HTMLTemplateElement } from "https://deno.land/x/deno_dom@v0.1.48/deno-d
 import { DocumentFragment } from "https://deno.land/x/deno_dom@v0.1.48/deno-dom-wasm.ts";
 
 
-const stripe = Stripe(Deno.env.get("STRIPE_API_KEY"), {
-    // This is needed to use the Fetch API rather than relying on the Node http
-    // package.
-    httpClient: Stripe.createFetchHttpClient(),
-});
+
 
 
 
