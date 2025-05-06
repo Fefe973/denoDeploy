@@ -8,11 +8,7 @@ import router from './routes.ts';
 
 
 
-const stripe = Stripe(Deno.env.get("STRIPE_API_KEY"), {
-  // This is needed to use the Fetch API rather than relying on the Node http
-  // package.
-  httpClient: Stripe.createFetchHttpClient(),
-});
+
 
 
 
