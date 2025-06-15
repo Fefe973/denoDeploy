@@ -26,8 +26,18 @@ const getLandingPage = async(ctx:any)=>{
     }
 }
 
+const getOtherPage = async(ctx:any)=>{
+    console.log('---getOtherPage function---');
+    try{
+        ctx.render('./otherpage/otherpage.ejs');
+    }catch(e){
+        console.log(`Error on getLandingPage function : ${e}`);
+    }finally{
+
+    }
+}
 
 
 
 
-export {getLandingPage}
+export {getLandingPage,getOtherPage}
