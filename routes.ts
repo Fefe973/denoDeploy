@@ -7,7 +7,7 @@ import { oakCors } from "https://deno.land/x/cors/mod.ts";
 const router = new Router();
 
 router.get('/',getLandingPage);
-
+router.get('/otherpage',getOtherPage);
 
 
 
